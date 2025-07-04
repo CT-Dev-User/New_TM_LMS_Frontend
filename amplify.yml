@@ -4,7 +4,8 @@ frontend:
     preBuild:
       commands:
         - nvm use 20
-        - npm install
+        - echo "Environment variables loaded"
+        - npm ci
     build:
       commands:
         - npm run build
