@@ -2,7 +2,7 @@
 import { Eye, EyeOff } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import image from '../../assets/login-pana.svg'
+import image from '../../assets/Login-pana.svg'
 import { CourseData } from '../../context/CourseContext'
 import { UserData } from '../../context/UserContext'
 import ForgetPass from '../ForgetPass/forgetpass'
