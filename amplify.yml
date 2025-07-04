@@ -7,21 +7,19 @@ frontend:
         - node --version
         - echo "NPM version:"
         - npm --version
-        - npm ci --cache .npm --prefer-offline
+        - echo "Installing dependencies..."
+        - npm ci
     build:
       commands:
-        - echo "Building React application..."
+        - echo "Building the application..."
         - npm run build
-    postBuild:
-      commands:
-        - echo "Build completed successfully"
   artifacts:
-    baseDirectory: dist
+    baseDirectory: build
     files:
       - '**/*'
   cache:
     paths:
       - node_modules/**/*
       - .npm/**/*
-  runtime:
-    nodejs20
+runtime:
+  nodejs: 18
