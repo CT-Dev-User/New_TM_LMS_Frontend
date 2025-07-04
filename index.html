@@ -2,12 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Favicon for browser tab and bookmarks -->
+    <link rel="icon" type="image/webp" href="/src/assets/logo.webp" />
+
+    <!-- Ensure the image works in Vite's dev and build modes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Tech Momentum</title>
+
+    <!-- Open Graph tags for search engine and social media previews -->
+    <meta property="og:title" content="Tech Momentum" />
+    <meta property="og:description" content="Learn and grow with Tech Momentum LMS" />
+    <meta property="og:image" content="/src/assets/logo.webp" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://your-website-url.com" /> Update with your production URL -->
+
+    <!-- Twitter Card tags (optional, for Twitter previews) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tech Momentum" />
+    <meta name="twitter:description" content="Learn and grow with Tech Momentum " />
+    <meta name="twitter:image" content="/src/assets/logo.webp" />
+
+    <!-- General meta description for SEO -->
+    <meta name="description" content="Learn and grow with Tech Momentum " />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   </body>
 </html>
