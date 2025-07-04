@@ -9,7 +9,7 @@ import App from './App.jsx'
 import { CourseContextProvider } from './context/CourseContext.jsx'
 import { UserContextProvider } from './context/UserContext.jsx'
 
-export const server = 'https://new-tm-lms-backend.vercel.app/'
+export const server = 'https://new-tm-lms-backend.vercel.app'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
