@@ -1,7 +1,24 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import { StrictMode } from 'react'
+import './index.css'
+import './App.css'
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+import { createRoot } from 'react-dom/client'
+
+import App from './App.jsx'
+// import { UserContextProvider } from './context/UserContext.jsx'
+import { CourseContextProvider } from './context/CourseContext.jsx'
+import { UserContextProvider } from './context/UserContext.jsx'
+
+export const server = 'https://new-tm-lms-backend.vercel.app/'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+
+    <UserContextProvider >
+      <CourseContextProvider>
+        <App />
+      </CourseContextProvider>
+    </UserContextProvider>
+
+  </StrictMode>,
+)

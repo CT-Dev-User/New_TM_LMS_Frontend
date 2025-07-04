@@ -1,0 +1,21 @@
+.users {
+    /* width: 350px; */
+    /* overflow-x: auto; */
+    padding-left: 20px;
+    white-space: nowrap;
+    margin: 20px auto;
+    min-height: 80vh;
+    /* border: solid gray 1px; */
+    table{
+        border-collapse: collapse;
+    }
+    td,th{
+        border: solid gray 1px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+    }

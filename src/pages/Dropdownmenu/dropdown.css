@@ -1,0 +1,63 @@
+
+
+.dropdown-menu-container {
+  position: relative;
+  display: inline-block; /* Ensure proper inline behavior */
+}
+
+.dropdown-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee; /* Add a subtle background color */
+  color: purple;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add a smooth hover transition */
+}
+
+.dropdown-icon:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+.dropdown-content {
+  display: none; /* Initially hide the dropdown */
+  position: absolute;
+  right: 0;
+  top: 100%; 
+  margin-top: 5px; /* Adjust margin for better spacing */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu-container:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a, .dropdown-content button {
+  color: #333; 
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s ease; /* Add hover transition */
+}
+
+.dropdown-content a:hover, .dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 8px 0;
+}
