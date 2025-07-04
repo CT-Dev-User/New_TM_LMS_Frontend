@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build": "react-scripts build"
   
-}
+
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

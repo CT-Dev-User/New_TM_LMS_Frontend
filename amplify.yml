@@ -21,5 +21,3 @@ frontend:
     paths:
       - node_modules/**/*
       - .npm/**/*
-runtime:
-  nodejs: 18
